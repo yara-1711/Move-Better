@@ -1,7 +1,7 @@
 class ServiceSection extends HTMLElement {
-    connectedCallback() {
+  connectedCallback() {
 
-        this.innerHTML = `
+    this.innerHTML = `
         <div class="overflow-x-auto">
     <table class="table">
       <tbody>
@@ -37,10 +37,26 @@ class ServiceSection extends HTMLElement {
             />
           </td>
         </tr>
+        <tr>
+        <td>
+            <service-card 
+              title="Osteopathy"
+              subtitle="Osteopathy is a holistic, hands-on healthcare approach that focuses on the relationship between the body’s structure and function. Osteopaths use gentle manual techniques to improve joint mobility, release muscle tension, and enhance circulation and nervous system function. Rather than treating symptoms alone, osteopathy aims to address the root cause of pain or dysfunction. It is effective for back pain, headaches, sports injuries, digestive issues, and postural problems, supporting the body’s natural ability to heal and maintain balance."
+              image="https://movebetterphysiotherapyclinic.com/wp-content/uploads/2026/01/Untitled-design-6.png"
+            />
+          </td>
+          <td>
+            <service-card 
+              title="Sports Injury Management"
+              subtitle="Sports injury management focuses on the prevention, diagnosis, treatment, and rehabilitation of injuries related to physical activity. It combines physiotherapy, manual therapy, exercise prescription, and injury-specific techniques to restore strength, mobility, and performance. The approach is tailored to the athlete’s sport, fitness level, and goals. Effective sports injury management not only treats acute and chronic injuries but also reduces the risk of re-injury, helping individuals return safely and confidently to training and competition."
+            image="https://movebetterphysiotherapyclinic.com/wp-content/uploads/elementor/thumbs/a50b3d55-c4c1-4ae8-8617-6170a749e386-riul2vyljylhbuedvl8o6mv1fik9ovdnvxxla9q9wg.jpg" 
+            />
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>`;
-    }
+  }
 }
 
 customElements.define("service-section", ServiceSection);
