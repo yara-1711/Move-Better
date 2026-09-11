@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Better Physiotherapy Clinic</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(180deg, #f8fcff 0%, #ffffff 100%);
+        color: #18324a;
+      }
+
+      .card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .soft-shadow {
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="navbar sticky top-0 z-50 border-b border-base-200 bg-white/90 backdrop-blur">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl font-semibold text-primary" href="#home">
+          Move Better
+        </a>
+      </div>
+
+      <nav class="hidden items-center gap-4 lg:flex">
+        <a class="link link-hover" href="#services">Services</a>
+        <a class="link link-hover" href="#about">About</a>
+        <a class="link link-hover" href="#testimonials">Testimonials</a>
+        <a class="link link-hover" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#contact">Book Now</a>
+      </nav>
+
+      <div class="lg:hidden">
+        <button id="menuButton" class="btn btn-ghost" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <div id="mobileMenu" class="hidden border-b bg-white lg:hidden">
+      <div class="flex flex-col gap-3 p-4">
+        <a class="link link-hover" href="#services">Services</a>
+        <a class="link link-hover" href="#about">About</a>
+        <a class="link link-hover" href="#testimonials">Testimonials</a>
+        <a class="link link-hover" href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="#contact">Book Now</a>
+      </div>
+    </div>
+
+    <main>
+      <section id="home" class="px-4 py-16 lg:py-24">
+        <div class="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+              Physiotherapy & Movement Care
+            </p>
+            <h1 class="text-4xl font-bold leading-tight md:text-6xl">
+              Feel better. Move better. Live better.
+            </h1>
+            <p class="mt-5 text-lg text-base-content/70">
+              We help people recover from pain, improve their movement, and return to the things they love.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a class="btn btn-primary" href="#contact">Book an Appointment</a>
+              <a class="btn btn-outline" href="#services">Our Services</a>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-6 text-sm font-medium">
+              <div>
+                <div class="text-2xl font-bold text-primary">10+</div>
+                <div class="text-base-content/70">Years helping patients</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary">1k+</div>
+                <div class="text-base-content/70">Happy clients</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary">4.9/5</div>
+                <div class="text-base-content/70">Average rating</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft-shadow rounded-[2rem] bg-white p-3">
+            <img src="images/hero.svg" alt="Clinic hero illustration" class="w-full rounded-[1.5rem]" />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="px-4 py-16">
+        <div class="mx-auto max-w-7xl">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Our Services</p>
+            <h2 class="mt-2 text-3xl font-bold md:text-4xl">Care that feels personal and practical</h2>
+            <p class="mx-auto mt-4 max-w-2xl text-base-content/70">
+              From injury recovery to strength and posture, we build a plan that fits your life.
+            </p>
+          </div>
+
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <div class="card bg-base-100 shadow-lg">
+              <figure>
+                <img src="images/service-1.svg" alt="Back and posture care" class="h-48 w-full object-cover" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Back & Posture Care</h3>
+                <p>Gentle treatment for pain, posture, and everyday movement problems.</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-lg">
+              <figure>
+                <img src="images/service-2.svg" alt="Sports injury recovery" class="h-48 w-full object-cover" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Sports Injury Rehab</h3>
+                <p>Recover safely and return to training, sport, and activity with confidence.</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-lg">
+              <figure>
+                <img src="images/service-3.svg" alt="Strength and mobility" class="h-48 w-full object-cover" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Strength & Mobility</h3>
+                <p>Build better movement, balance, strength, and confidence through guided exercise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-base-200 px-4 py-16">
+        <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
+          <div class="soft-shadow overflow-hidden rounded-[2rem] bg-white p-3">
+            <img src="images/about.svg" alt="Clinic team" class="w-full rounded-[1.5rem]" />
+          </div>
+
+          <div class="flex flex-col justify-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-primary">About Us</p>
+            <h2 class="mt-2 text-3xl font-bold md:text-4xl">Friendly care built around your goals</h2>
+            <p class="mt-4 text-lg text-base-content/70">
+              Our team combines hands-on treatment, education, and simple exercise plans so you can recover well and feel supported.
+            </p>
+
+            <ul class="mt-6 space-y-3 text-base-content/80">
+              <li>✓ One-on-one treatment and clear advice</li>
+              <li>✓ Simple home exercises you can actually follow</li>
+              <li>✓ Support for pain, posture, recovery, and movement</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4 py-16">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid gap-6 md:grid-cols-3">
+            <div class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title">Personalized Plans</h3>
+                <p>We create a plan that fits your body, your goals, and your daily routine.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title">Clear Education</h3>
+                <p>You will understand your condition and learn how to improve it with confidence.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title">Long-Term Support</h3>
+                <p>We guide you through recovery and help you stay active for the long term.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="px-4 py-16">
+        <div class="mx-auto max-w-7xl">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Testimonials</p>
+            <h2 class="mt-2 text-3xl font-bold md:text-4xl">What patients say</h2>
+          </div>
+
+          <div class="mt-10 grid gap-6 md:grid-cols-2">
+            <div class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <p>“The team made everything feel simple and clear. I felt better after just a few visits.”</p>
+                <p class="mt-4 font-semibold">— Sarah M.</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <p>“I got back to running and everyday life without the pain I had before.”</p>
+                <p class="mt-4 font-semibold">— James T.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-base-200 px-4 py-16">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Contact</p>
+                <h2 class="card-title text-3xl">Let’s help you move better</h2>
+                <p class="mt-2 text-base-content/70">
+                  Call us or send a message to start your treatment plan.
+                </p>
+
+                <div class="mt-6 space-y-3">
+                  <p><strong>Phone:</strong> (555) 123-4567</p>
+                  <p><strong>Email:</strong> hello@movebetterclinic.com</p>
+                  <p><strong>Location:</strong> 123 Wellness Street, Your City</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-primary text-primary-content shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title text-2xl">Ready to start?</h3>
+                <form id="contactForm" class="mt-4 space-y-3">
+                  <input type="text" placeholder="Your name" class="input input-bordered w-full text-base-content" required />
+                  <input type="email" placeholder="Your email" class="input input-bordered w-full text-base-content" required />
+                  <textarea class="textarea textarea-bordered w-full text-base-content" placeholder="Tell us about your goal"></textarea>
+                  <button type="submit" class="btn btn-secondary w-full">Send Message</button>
+                  <p id="formMessage" class="text-sm"></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-center bg-base-300 p-6 text-base-content">
+      <div>
+        <p>© 2026 Move Better Physiotherapy Clinic. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      const contactForm = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
+
+      if (contactForm && formMessage) {
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          formMessage.textContent = "Thanks! We will contact you soon.";
+          contactForm.reset();
+        });
+      }
+    </script>
+  </body>
+</html>
